@@ -1,0 +1,173 @@
+* {
+    user-select: none;          /* user-select: none; impede que o usuário copie o texto no site */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+    background-color: #0a2a52;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 4px;
+}
+
+.entrada {
+    width: 230px;
+    height: 20px;
+    color: gray;
+    margin: auto;
+    background-color: unset;
+    font-size: 1em;
+    display: block;
+    border: none;
+    border-bottom: 2.5px solid black;
+    border-radius: 2px;
+    margin-top: 40px;
+    padding-bottom: 5px;
+}
+
+#submeterReset, #submeterSintomas{
+    width: 100px;
+    height: 25px;
+    background-color: orange;
+    border: 1.5px solid black;
+    border-radius: 25px;
+}
+
+#submeterDados, #submeterSintomas, #submeterReset{
+    display: block;
+    margin: auto;
+}
+
+#submeterReset{
+    margin-bottom: 20px;
+}
+
+#submeterDados{
+    width: 125px;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    margin-top: 50px;
+    position: relative;
+    top: 50px;
+}
+
+#submeterDados:hover{
+    border: 2.5px solid;
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+#notaCondicao{
+    border: 1.5px solid black;
+    padding: 5px;
+    background-color: orange;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+#nomeAbreviado{
+    margin-top: 40px;
+}
+
+#nomeCompleto{
+    color: orange;
+}
+
+/* CRIA UMA ANIMAÇÃO.  ATIVADO POR JS*/
+@keyframes anima{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+#form_avisa {
+    display: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#submeterSintomas {
+    display: none;
+}
+
+.sintoma:last-of-type{
+    margin-bottom: 25px;
+}
+
+.sintoma {
+    color: gray;
+    display: block;
+    font-size: .9em;
+    text-align: justify;
+    margin-top: 20px;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 10px;
+}
+
+#separador{
+    height: 15px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+#form_resultado {
+    display: none;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#sairDoResultado{
+    width: 100px;
+    height: 25px;
+    color: green;
+    background-color: rgb(211, 230, 237);
+    border: 1.5px solid black;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+img{
+    width: 100%;
+}
+
+.resultado{
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resultado:first-of-type{
+    text-align: center;
+    border: 1.5px solid;
+    border-radius: 25px;
+    background-color: rgb(86, 255, 123);
+}
+
+.resultado:last-of-type{
+    border-top: 1.5px solid;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.resultado:nth-of-type(2){
+    border-bottom: 1.5px solid;
+    padding-bottom: 10px;
+}

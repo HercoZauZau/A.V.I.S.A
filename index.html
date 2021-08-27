@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.V.I.S.A.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1 id="nomeAbreviado">A V I S A</h1>
+    <p id="nomeCompleto">Assistente Virtual de Saúde</p>
+    <form id="form_dados">
+        <input id="nome" class="entrada" type="text" placeholder="Nome">
+        <input id="idade" class="entrada" type="number" min="0" placeholder="Idade">
+        <input id="sexo" type="text" list="listaSexo" class="entrada" placeholder="Sexo">
+        <input id="endereco" class="entrada" type="text" placeholder="Endereço">
+        <datalist id="listaSexo">
+            <option value="Masculino"></option>
+            <option value="Feminino"></option>
+        </datalist>
+        <input type="button" value="INICIAR" id="submeterDados">
+    </form>
+
+    <form id="form_avisa">
+        <p id="notaCondicao">SELECIONE NO MÍNIMO 4 SINTOMAS</p>
+        <p class="sintoma" id="ansiedade">ANSIEDADE</p>
+        <p class="sintoma" id="bocaSeca">BOCA SECA</p>
+        <p class="sintoma" id="calafrios">CALAFRIOS</p>
+        <p class="sintoma" id="cansaco">CANSAÇO</p>
+        <p class="sintoma" id="chiadoNoPeito">CHIADO NO PEITO</p>
+        <p class="sintoma" id="desconfortoToracico">DESCONFORTO TORÁCICO</p>
+        <p class="sintoma" id="diarreia">DIARREIA</p>
+        <p class="sintoma" id="dorDeCabeca">DOR DE CABEÇA</p>
+        <p class="sintoma" id="dorDeEstomago">DOR DE ESTÔMAGO</p>
+        <p class="sintoma" id="doresDeGarganta">DORES DE GARGANTA</p>
+        <p class="sintoma" id="dorNoCorpo">DOR NO CORPO</p>
+        <p class="sintoma" id="faltaDeAr">FALTA DE AR</p>
+        <p class="sintoma" id="febres">FEBRES</p>
+        <p class="sintoma" id="fomeFrequente">FOME FREQUENTE</p>
+        <p class="sintoma" id="gases">GASES</p>
+        <p class="sintoma" id="inchachoNoCorpo">INCHAÇHO NO CORPO</p>
+        <p class="sintoma" id="malEstar">MAL-ESTAR</p>
+        <p class="sintoma" id="peleSeca">PELE SECA</p>
+        <p class="sintoma" id="vomito">VÓMITO</p>
+        <p class="sintoma" id="perdaDePaladar">PERDA DE PALADAR</p>
+        <p class="sintoma" id="perdaDePeso">PERDA DE PESO</p>
+        <p class="sintoma" id="queimacaoNoEstomago">QUEIMAÇÃO NO ESTÔMAGO</p>
+        <p class="sintoma" id="sangramento">SANGRAMENTO</p>
+        <p class="sintoma" id="sedeFrequente">SEDE FREQUENTE</p>
+        <p class="sintoma" id="secrecaoNasal">SECREÇÃO NASAL</p>
+        <p class="sintoma" id="suoresNoturnos">SUORES NOTURNOS</p>
+        <p class="sintoma" id="tosseHumida">TOSSE HÚMIDA</p>
+        <p class="sintoma" id="tosseSeca">TOSSE SECA</p>
+        <p class="sintoma" id="tremores">TREMORES</p>
+        <p class="sintoma" id="vontadeDeUrinar">VONTADE DE SEMPRE URINAR</p>
+        <input type="button" id="submeterSintomas" value="SUBMETER">
+        <div id="separador"></div>
+        <input type="submit" id="submeterReset" value="RESET">
+    </form>
+    <form id="form_resultado">
+        <p class="resultado">RESULTADO DO EXAME</p>
+        <p  class="resultado">DADOS DO PACIENTE</p>
+        <p id="resNome" class="resultado">NOME: </p>
+        <p id="resIdade" class="resultado">IDADE: </p>
+        <p id="resSexo" class="resultado">SEXO: </p>
+        <p id="resEndereco" class="resultado">ENDEREÇO: </p>
+        <p id="resultadoFinal" class="resultado">LISTA DE PROVÁVEIS DOENÇAS:  </p>
+        <img src="img.jpg" alt="Wallpaper">
+        <input type="button" id="sairDoResultado" value="VOLTAR">
+    </form>
+
+</body>
+
+</html>
