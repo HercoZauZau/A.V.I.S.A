@@ -1,4 +1,4 @@
-# https://herco21.github.io/avisa21/
+# https://avisa21.netlify.app/
 ##
 
 <div align="center">
